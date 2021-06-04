@@ -34,13 +34,16 @@
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link active" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
+              <a class="nav-link active" href="#project">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact"> Contact</a>
+              <a class="nav-link active" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact"> Contact</a>
             </li>
           </ul>
         </div>
@@ -152,6 +155,8 @@
       </svg>
     </section>
     <!-- Akhir Project -->
+
+    <!-- Gallery -->
     <section id="gallery">
       <div class="container">
         <div class="row text-center mb-3">
@@ -222,13 +227,69 @@
             </div>
           </div> 
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+            fill="#e2edff"
+            fill-opacity="1"
+            d="M0,192L60,176C120,160,240,128,360,128C480,128,600,160,720,192C840,224,960,256,1080,256C1200,256,1320,224,1380,208L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path></svg>
+      
     </section>
-    <!-- Galery -->
-
-
-
-
+    
     <!-- Akhir Galery -->
+
+    <!-- Carousel -->
+    <section id="carousel">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+          <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="img/Carousel/1.png" class="d-block w-40" alt="1">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/Carousel/2.png" class="d-block w-40" alt="2">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Carousel/3.png" class="d-block w-40" alt="3">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,224C384,213,480,139,576,96C672,53,768,43,864,69.3C960,96,1056,160,1152,165.3C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <!-- Akhir Carouser -->
 
     <!-- contact -->
     <section id="contact">
@@ -245,28 +306,28 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
             <form name="wpu-contact-form">
-            <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama"/>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
-            </div>
-            <div  class="mb-3">
-                <label for="Pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="Pesan" rows="3" name="pesan"></textarea>
-            </div>
-        <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
-        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-          Loading...
-        </button>
+              <div class="mb-3">
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama"/>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+              </div>
+              <div  class="mb-3">
+                  <label for="Pesan" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="Pesan" rows="3" name="pesan"></textarea>
+              </div>
+                <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
             </form>
         </div>
         </div>
     </section>
-    <svg 
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,320L48,304C96,288,192,256,288,245.3C384,235,480,245,576,240C672,235,768,213,864,197.3C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  
     <!-- akhir contact -->
 
     <!-- footer -->
@@ -299,7 +360,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
     <script>
-      gsap.registerPlugin(TextPlugin);
+     gsap.registerPlugin(TextPlugin);
       gsap.to('.lead', {duration: 2, delay:1.5, text : 'Personal Content Creator'});
       gsap.from('.jumbotron img', { duration: 1, rotateY: -100, opacity: 0});
       gsap.from('.navbar', { duration: 2, y: '-100%', opacity: 0, ease:'bounce'});

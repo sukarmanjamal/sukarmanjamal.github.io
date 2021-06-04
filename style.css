@@ -10,6 +10,13 @@ body {
 #project {
   background-color: #e2edff;
 }
+#gallery {
+  background-color: #ffffff;
+}
+
+#carousel {
+  background-color: #e2edff;
+}
 section {
   padding-top: 5rem;
 }
